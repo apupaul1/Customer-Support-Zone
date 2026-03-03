@@ -1,0 +1,139 @@
+{
+  "tickets": [
+    {
+      "id": 1001,
+      "title": "Login issue on mobile app",
+      "description": "Customer unable to login using correct credentials on Android device.",
+      "customer": "Rahim Uddin",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2026-03-01T09:15:00Z"
+    },
+    {
+      "id": 1002,
+      "title": "Payment not reflecting",
+      "description": "Customer completed payment but order status still pending.",
+      "customer": "Nusrat Jahan",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2026-03-01T11:20:00Z"
+    },
+    {
+      "id": 1003,
+      "title": "Password reset email not received",
+      "description": "User requested password reset but did not receive email.",
+      "customer": "Tanvir Hasan",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2026-02-28T16:45:00Z"
+    },
+    {
+      "id": 1004,
+      "title": "App crashes on checkout",
+      "description": "Application crashes when customer tries to checkout cart items.",
+      "customer": "Sadia Islam",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2026-02-27T14:30:00Z"
+    },
+    {
+      "id": 1005,
+      "title": "Refund request for duplicate order",
+      "description": "Customer accidentally placed two identical orders and requests refund.",
+      "customer": "Imran Hossain",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2026-02-26T10:10:00Z"
+    },
+    {
+      "id": 1006,
+      "title": "Unable to update profile",
+      "description": "Customer cannot update phone number in profile settings.",
+      "customer": "Mithila Rahman",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "2026-02-25T08:55:00Z"
+    },
+    {
+      "id": 1007,
+      "title": "Order delivered to wrong address",
+      "description": "Customer claims order was delivered to incorrect address.",
+      "customer": "Arif Chowdhury",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2026-02-24T13:40:00Z"
+    },
+    {
+      "id": 1008,
+      "title": "Coupon code not working",
+      "description": "Promo code applied but discount not showing.",
+      "customer": "Farhana Akter",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2026-02-23T15:25:00Z"
+    },
+    {
+      "id": 1009,
+      "title": "Website loading very slow",
+      "description": "Customer experiencing very slow loading times on homepage.",
+      "customer": "Shakib Al Hasan",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2026-02-22T18:10:00Z"
+    },
+    {
+      "id": 1010,
+      "title": "Account suspended without notice",
+      "description": "Customer account suspended but no email notification received.",
+      "customer": "Jannatul Ferdous",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2026-02-21T09:00:00Z"
+    },
+    {
+      "id": 1011,
+      "title": "Incorrect invoice amount",
+      "description": "Invoice shows higher amount than actual order total.",
+      "customer": "Mahmudul Hasan",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2026-02-20T12:35:00Z"
+    },
+    {
+      "id": 1012,
+      "title": "Notification not working",
+      "description": "Push notifications are not received on iOS device.",
+      "customer": "Rupa Das",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "2026-02-19T17:50:00Z"
+    },
+    {
+      "id": 1013,
+      "title": "Cannot download invoice PDF",
+      "description": "Download button not responding when clicking invoice PDF.",
+      "customer": "Sabbir Ahmed",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "2026-02-18T10:15:00Z"
+    },
+    {
+      "id": 1014,
+      "title": "Search feature not returning results",
+      "description": "Search bar does not show relevant products.",
+      "customer": "Sharmin Sultana",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2026-02-17T14:05:00Z"
+    },
+    {
+      "id": 1015,
+      "title": "Language not switching properly",
+      "description": "Changing language does not update all page contents.",
+      "customer": "Kamrul Hasan",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "2026-02-16T19:30:00Z"
+    }
+  ]
+}
