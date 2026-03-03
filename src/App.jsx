@@ -14,9 +14,17 @@ function App() {
   const [progressCount, setProgressCount] = useState(0)
   const [taskName, setTaskName] = useState([])
   const [resolved, setResolved] = useState([])
+  const [allTask, setAllTask] = useState([])
 
-  const handleRemove = (a) => {
-    console.log("Hello");
+
+
+  const handleRemove = (id) => {
+    const remainingTask = taskName.filter(task => task.id !== id)
+    setTaskName(remainingTask)
+    toast.success("Successfully Resolved")
+
+    const taskList = allTask.filter(tsk => tsk.id !== id)
+    setAllTask(taskList)
   }
 
   return (
@@ -70,6 +78,8 @@ function App() {
               ticketsPromise={ticketsPromise}
               taskName={taskName}
               setTaskName={setTaskName}
+              allTask={allTask}
+              setAllTask={setAllTask}
             ></TicketsContainer>
           </Suspense>
           <CardStatus
@@ -77,6 +87,8 @@ function App() {
             resolved={resolved}
             setResolved={setResolved}
             handleRemove={handleRemove}
+            setProgressCount={setProgressCount}
+            progressCount={progressCount}
           ></CardStatus>
         </section>
       </main>

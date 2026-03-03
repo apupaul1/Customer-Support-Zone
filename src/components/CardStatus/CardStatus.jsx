@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const CardStatus = ({ taskName, resolved, setResolved }) => {
+const CardStatus = ({ taskName, resolved, setResolved, handleRemove, setProgressCount,
+    progressCount}) => {
 
 
     return (
@@ -14,6 +15,8 @@ const CardStatus = ({ taskName, resolved, setResolved }) => {
                             <button onClick={() => {
                                 const updatedResolved = [...resolved, task]
                                 setResolved(updatedResolved)
+                                handleRemove(task.id)
+                                setProgressCount(progressCount-1)
                             }}
                                 className='btn w-full btn-success text-base-100'>Complete</button>
                         </div>)}
@@ -21,7 +24,7 @@ const CardStatus = ({ taskName, resolved, setResolved }) => {
                 </div>
             </div>
 
-            <div>
+            <div className='mt-6'>
                 <h1 className='font-bold'>Resolved Task</h1>
                 <div className='text-sm text-gray-500 my-3'>
                     {resolved.length == 0 ? 'No Resolved Task Yet.' : <div className='flex flex-col gap-3'>

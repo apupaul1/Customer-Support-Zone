@@ -25,7 +25,7 @@ const TicketCard = ({ ticket, setProgressCount, progressCount, taskName, setTask
     return (
         <div
             onClick={handleClick}
-            className={`bg-base-100 p-4 rounded-2xl ${isClicked ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+            className={`bg-base-100 p-4 rounded-2xl shadow-md ${isClicked ? 'cursor-not-allowed' : 'cursor-pointer'}`}
         >
             <div className='flex justify-between mb-1 items-center'>
                 <h1>{title}</h1>
