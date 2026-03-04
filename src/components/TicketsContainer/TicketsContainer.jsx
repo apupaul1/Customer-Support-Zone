@@ -15,7 +15,7 @@ const TicketsContainer = ({ ticketsPromise, setProgressCount, progressCount, tas
         <div className='flex-2'>
             <h1 className='font-bold'>Customer Tickets</h1>
 
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 mt-6'>
                 {
                     allTask.length == 0 && <p className='text-center'>All Tickets Resolved</p>
                 }

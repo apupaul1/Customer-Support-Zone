@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import Navbar from './components/Navbar/Navbar';
 import TicketsContainer from './components/TicketsContainer/TicketsContainer';
 import CardStatus from './components/CardStatus/CardStatus';
+import Footer from './components/Footer/Footer';
 
 
 const ticketsPromise = fetch('/tickets.json').then(res => res.json())
@@ -93,7 +94,9 @@ function App() {
         </section>
       </main>
 
-      <footer></footer>
+      <footer>
+        <Footer></Footer>
+      </footer>
 
       <ToastContainer />
     </>

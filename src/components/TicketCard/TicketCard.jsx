@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
+import { MdOutlineDateRange } from "react-icons/md";
+
 
 const TicketCard = ({ ticket, setProgressCount, progressCount, taskName, setTaskName }) => {
 
@@ -14,6 +16,7 @@ const TicketCard = ({ ticket, setProgressCount, progressCount, taskName, setTask
             toast.error("You have already added to be resolved")
             return;
         }
+        toast.success(`Added ${title} to the task status`)
         setIsClicked(true);
         setProgressCount(progressCount + 1)
 
@@ -28,8 +31,11 @@ const TicketCard = ({ ticket, setProgressCount, progressCount, taskName, setTask
             className={`bg-base-100 p-4 rounded-2xl shadow-md ${isClicked ? 'cursor-not-allowed' : 'cursor-pointer'}`}
         >
             <div className='flex justify-between mb-1 items-center'>
-                <h1>{title}</h1>
-                <button className={"btn rounded-full bg-emerald-200"}>{status}</button>
+                <h1 className='text-lg font-bold'>{title}</h1>
+                <button className={"btn rounded-full bg-emerald-200 text-[#0B5E06]"}>
+                    <span className='w-3 h-3 rounded-full bg-[#02A53B]'></span>
+                    {status}
+                    </button>
             </div>
 
             <div className='mb-3'>
@@ -39,8 +45,8 @@ const TicketCard = ({ ticket, setProgressCount, progressCount, taskName, setTask
             <div className='flex flex-col lg:flex-row justify-between'>
 
                 <div className='flex justify-between gap-6'>
-                    <h1 className='text-sm'>#{id}</h1>
-                    <p className={`font-semibold text-sm
+                    <h1 className='text-xs'>#{id}</h1>
+                    <p className={`font-semibold text-xs
                         ${priority === 'High' && 'text-red-500'}
                         ${priority === 'Medium' && 'text-[#FEBB0C]'}
                         ${priority === 'Low' && 'text-[#02A53B]'}`}>
@@ -48,8 +54,8 @@ const TicketCard = ({ ticket, setProgressCount, progressCount, taskName, setTask
                 </div>
 
                 <div className='flex  justify-between gap-4'>
-                    <h1 className='text-sm'>{customer}</h1>
-                    <p className='flex items-center gap-2 text-sm'>{formattedDate}</p>
+                    <h1 className='text-xs mt-2 lg:mt-0'>{customer}</h1>
+                    <p className='flex items-center gap-2 text-xs mt-2 lg:mt-0'><MdOutlineDateRange size={20}/>{formattedDate}</p>
                 </div>
 
             </div>
