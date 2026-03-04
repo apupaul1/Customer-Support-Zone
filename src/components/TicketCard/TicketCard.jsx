@@ -31,7 +31,7 @@ const TicketCard = ({ ticket, setProgressCount, progressCount, taskName, setTask
             className={`bg-base-100 p-4 rounded-2xl shadow-md ${isClicked ? 'cursor-not-allowed' : 'cursor-pointer'}`}
         >
             <div className='flex justify-between mb-1 items-center'>
-                <h1 className='text-lg font-bold'>{title}</h1>
+                <h1 className='lg:text-lg font-bold'>{title}</h1>
                 <button className={"btn rounded-full bg-emerald-200 text-[#0B5E06]"}>
                     <span className='w-3 h-3 rounded-full bg-[#02A53B]'></span>
                     {status}
