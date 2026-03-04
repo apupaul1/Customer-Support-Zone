@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import TicketsContainer from './components/TicketsContainer/TicketsContainer';
 import CardStatus from './components/CardStatus/CardStatus';
 import Footer from './components/Footer/Footer';
+import Loading from './components/Loading/Loading';
 
 
 const ticketsPromise = fetch('/tickets.json').then(res => res.json())
@@ -22,7 +23,7 @@ function App() {
   const handleRemove = (id) => {
     const remainingTask = taskName.filter(task => task.id !== id)
     setTaskName(remainingTask)
-    toast.success("Successfully Resolved")
+    toast.success(`Successfully Resolved Ticket Number #${id}`)
 
     const taskList = allTask.filter(tsk => tsk.id !== id)
     setAllTask(taskList)
@@ -72,7 +73,7 @@ function App() {
         </div>
 
         <section className='flex w-11/12 mx-auto gap-4 flex-col lg:flex-row pb-12'>
-          <Suspense fallback={<h1>Loading....</h1>}>
+          <Suspense fallback={<Loading></Loading>}>
             <TicketsContainer
               setProgressCount={setProgressCount}
               progressCount={progressCount}

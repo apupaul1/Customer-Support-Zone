@@ -13,7 +13,7 @@ const TicketCard = ({ ticket, setProgressCount, progressCount, taskName, setTask
 
     const handleClick = () => {
         if (isClicked) {
-            toast.error("You have already added to be resolved")
+            toast.error(`You have already added ${title} to be resolved`)
             return;
         }
         toast.success(`Added ${title} to the task status`)
